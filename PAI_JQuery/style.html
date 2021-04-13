@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>style</title>
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+
+        $(function () {
+            $('button:contains(\'Zielony\')').click(function () {
+                $('#classic').addClass('zielona');
+            });
+            $('button:contains(\'mosteczek\')').click(function () {
+                $('#classic').removeClass('zielona');
+            });
+            $('button:contains(\'ugina\')').click(function () {
+                $('#toggle').toggleClass('zielona');
+            });
+            $('tr:even').addClass('zielona');
+
+            //zadanie 12
+
+            $('ol.a .b:not(:has(a))').css('background', 'red');
+
+        });
+    </script>
+    <style>
+        .zielona{background: Pink;}
+        .zadanie12{background: crimson}
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr><td>Pierwszy</td></tr>
+        <tr><td>Drugi</td></tr>
+        <tr><td>Trzeci</td></tr>
+        <tr><td>Czwarty</td></tr>
+        <tr><td>Piąty</td></tr>
+        <tr><td>Szósty</td></tr>
+    </table>
+
+
+    <div><button>Zielony</button><button>mosteczek</button><span id="classic">Zmiana
+    przez dodawanie/usuwanie klasy.</span></div>
+    <div><button>ugina się.</button><span id="toggle">Zmiana przez przełączanie
+    klas.</span></div>
+
+    <ol class="a">
+        <li>Królestwa Północy</li>
+        <li> <a href="asdf.pdf">link</a></li>
+        <li class="b">Cesarstwo Nilfgaardu</li>
+        <li class="b"> <a href="asdf.pdf">LINK</a></li>
+        <li class="b"> <a href="asdf.pdf">LINK</a></li>
+        <li class="b"> <a href="asdf.pdf">LINK</a></li>
+        <li class="c"> <a href="asdf.pdf">LINK</a></li>
+    </ol>
+
+</body>
+</html>

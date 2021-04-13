@@ -1,0 +1,39 @@
+li {
+    list-style-type: square;
+}
+
+#cena{
+    color:red;
+    font-weight: bold;
+}
+
+.wstep{
+    font-style: italic;
+}
+
+td>img{
+    border: solid #00ccff 3px;
+}
+
+td>img:hover{
+    border: solid #b83939 3px;
+}
+
+h1+h2{
+    letter-spacing: 5px;
+}
+
+td[colspan="2"]>p
+{
+    font-size: small;
+}
+
+p+p{
+    color: #808080;
+}
+
+body{
+    background-image: url(https://charlottesometimesgoestothemovies.files.wordpress.com/2020/03/books.jpg);
+    background-repeat: repeat-y;
+    background-size: 13%;
+}

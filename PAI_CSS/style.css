@@ -1,0 +1,138 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  margin: 0px;
+  padding: 0px ;
+  box-sizing: border-box;
+  font: 16px Verdana;
+  text-decoration:none;
+  font-weight:normal;
+  color:black;
+  height: 100%;
+}
+
+header{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  padding: 30px;
+}
+
+main{
+  display:flex;
+  flex-direction: row;
+  padding:15px;
+}
+
+.naglowek{
+  font-size: 32px;
+  margin-left: 15px;
+  font-weight:bold;
+  flex-grow: 8;
+}
+
+nav{
+  flex-grow: 18;
+  display: flex;
+  justify-content:flex-end;
+  align-self:flex-start;
+
+}
+
+.logo{
+  flex-grow: 1;
+  width:30px;
+  height:40px;
+}
+nav a{
+  width: 75px;
+}
+
+.hamburger{
+  display:none;
+}
+
+article{
+  margin:15px;
+  width:100%;
+  border: 2px solid black;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  text-align: justify;
+}
+
+
+.nagl2{
+  height:50px;
+  width:50%;
+  font-size: 1.5em;
+  align-self: flex-end;
+  background-color: lightgray;
+  border-width:0px 0px 2px 2px;
+  border-style: solid;
+  border-color:black;
+  text-align: center;
+}
+
+article p+p{
+  padding:15px;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+footer{
+  height:100px;
+  background-color: lightgray;
+  border-top: 2px solid black;
+  margin-top:15px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  flex-shrink: 0;
+}
+
+footer p+p{
+  font-weight:bold;
+}
+
+@media all and (max-width: 900px) {
+  main {
+    flex-wrap: wrap;
+  }
+  nav,.naglowek {
+    display:none;
+  }
+
+  .logo{
+    width:30px;
+    height:30px;
+    flex-grow: 0;
+  }
+
+  .hamburger{
+    display:block;
+    width:30px;
+    height:auto;
+    flex-grow: 0;
+  }
+  header{
+    justify-content:space-between;
+  }
+
+}
